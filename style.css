@@ -1,0 +1,128 @@
+
+img{
+  max-width: 30%;
+  height: min-content;
+}
+
+
+body{
+  color: white; 
+  margin: 0;
+  padding: 0;
+  background:-webkit-linear-gradient(228deg, #002d71 0%, #0096d8 100%) ;
+  font-family: sans-serif;
+  font-weight: lighter;
+  padding-top: 1em;
+  text-align: center;
+  animation: transitionIn 1s;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {background:-webkit-linear-gradient(228deg, #002d71 0%, #0096d8 100%) ;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {background:-webkit-linear-gradient(228deg, #002d71 0%, #0096d8 100%) ;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 800px) {
+  body {background:-webkit-linear-gradient(228deg, #002d71 0%, #0096d8 100%) ;}
+
+  div {
+    padding-top: 130px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 900px) {
+  body {background:-webkit-linear-gradient(228deg, #002d71 0%, #0096d8 100%) ;}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {background:-webkit-linear-gradient(228deg, #002d71 0%, #0096d8 100%) ;}
+}
+
+button {
+  background-color: #0043a7;
+  color: white;
+  display: inline-block;
+  padding: 15px 32px;
+  font-size: 16px;
+  border-radius: 25px;
+  border: 2px solid #0043a7;
+  transition-duration: 0.4s;
+  animation: transitionOut 2s;
+  
+ 
+}
+
+button:hover {
+  background-color: #013c55; /* Green */
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+
+.block p {
+  font-size: 20px;
+  padding: 3em;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+section {
+display: block;
+max-width: 600px;
+margin: 0 auto 1em;
+height: 100px;
+position: relative;
+border-right: .2em;
+transform: preserve-3d;
+}
+
+@media screen and (max-width: 600px) {
+  div {
+    padding-top: 130px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+  }
+
+  img {
+    max-width: 50%;
+  }
+  
+}
+
+@keyframes transitionIn {
+  from{
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+@keyframes transitionOut {
+  from{
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
